@@ -98,3 +98,15 @@ The data points should not be sorted by the attribute.
 
 
 
+## Citation
+
+```bibtex
+@misc{xu2024irangegraphimprovisingrangededicatedgraphs,
+      title={iRangeGraph: Improvising Range-dedicated Graphs for Range-filtering Nearest Neighbor Search}, 
+      author={Yuexuan Xu and Jianyang Gao and Yutong Gou and Cheng Long and Christian S. Jensen},
+      year={2024},
+      eprint={2409.02571},
+      archivePrefix={arXiv},
+      primaryClass={cs.DB},
+      url={https://arxiv.org/abs/2409.02571}, 
+}
