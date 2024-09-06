@@ -1,5 +1,5 @@
 # iRangeGraph
-
+This repo is the implementation of [iRangeGraph: Improvising Range-dedicated Graphs for Range-filtering Nearest Neighbor Search](https://arxiv.org/abs/2409.02571)
 
 
 ## Quick Start
@@ -84,3 +84,17 @@ The data points should not be sorted by the attribute.
 ```bash
 ./tests/search_multi --data_path [path to data points] --query_path [path to query points] --range_saveprefix [folder path to save query ranges] --groundtruth_saveprefix [folder path to save groundtruth] --index_file [path of the index file] --result_saveprefix [folder path to save results] --attribute1 [path to first attributes] --attribute2 [path to second attributes] --M [integer]
 ```
+
+
+
+## Datasets
+| Dataset |Vector Type| Dimension | Attribute Type |
+|---------|-----------|-----------|----------------|
+|   [WIT](https://github.com/google-research-datasets/wit)   |   image   |   2048    |   image size   |
+|[TripClick](https://tripdatabase.github.io/tripclick/)|   text    |   768     |publication date|
+| [Redcaps](https://redcaps.xyz/) |multi-modality|  512   |   timestamp    |
+|[YouTube-RGB](https://research.google.com/youtube8m/download.html)|  video  |   1024    | \# of likes, \# of comments|
+|[YouTube-Audio](https://research.google.com/youtube8m/download.html)| audio |   128     | publish time,  \# of views | 
+
+
+
