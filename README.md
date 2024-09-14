@@ -61,7 +61,7 @@ The data points should be already sorted in ascending order by the attribute.
 
 #### parameter:
 **`--data_path`**:  The data points over which the index is built, in .bin format. The first 4 bytes represent number of points as integer. The next 4 bytes represent the dimension of data as integer. The following `n*d*sizeof(float)` bytes contain the contents of the data one data point in a time.
-The data points should not be sorted by the attribute.
+There is no need to pre-sort the data points by any attribute. Just make sure data points and attribute1 and attribute2 match one by one in order.
 
 **`--query_path`**: The query vectors, in .bin format. The first 4 bytes represent number of points as integer. The next 4 bytes represent the dimension of data as integer. The following `n*d*sizeof(float)` bytes contain the contents of the query one query point in a time.
 
@@ -69,7 +69,7 @@ The data points should not be sorted by the attribute.
 
 **`--groundtruth_saveprefix`**: The path of folder where groundtruth files will be saved.
 
-**`--index_file`**: The file path where the constructed index is saved, which is built with data points sorted by the first attribute.
+**`--index_file`**: The file path where the constructed index is saved, which is built with data points sorted by the first attribute (See Construct Index, note that the data points should be pre-sorted by attribute1 when building the index).
 
 **`--result_saveprefix`**: The path of folder where result files will be saved.
 
@@ -98,15 +98,3 @@ The data points should not be sorted by the attribute.
 
 
 
-## Citation
-
-```bibtex
-@misc{xu2024irangegraphimprovisingrangededicatedgraphs,
-      title={iRangeGraph: Improvising Range-dedicated Graphs for Range-filtering Nearest Neighbor Search}, 
-      author={Yuexuan Xu and Jianyang Gao and Yutong Gou and Cheng Long and Christian S. Jensen},
-      year={2024},
-      eprint={2409.02571},
-      archivePrefix={arXiv},
-      primaryClass={cs.DB},
-      url={https://arxiv.org/abs/2409.02571}, 
-}
