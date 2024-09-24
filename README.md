@@ -41,7 +41,7 @@ The data points should be already sorted in ascending order by the attribute.
 
 **`--query_path`**: The query vectors, in .bin format. The first 4 bytes represent number of points as integer. The next 4 bytes represent the dimension of data as integer. The following `n*d*sizeof(float)` bytes contain the contents of the query one query point in a time.
 
-**`--range_saveprefix`**: The path of folder where query range files will be saved.
+**`--range_saveprefix`**: The path of folder where query range files will be saved. 0~9 denotes query range fractions ![formula](https://latex.codecogs.com/png.latex?2^0,2^{-1},...,2^{-9}) respectively, and 17 denotes mixed range fraction.
 
 **`--groundtruth_saveprefix`**: The path of folder where groundtruth files will be saved.
 
